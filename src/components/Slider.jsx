@@ -1,50 +1,54 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../assets/slider/1.png";
-import img2 from "../assets/slider/2.png";
-import img3 from "../assets/slider/3.png";
-import img4 from "../assets/slider/4.png";
-import img5 from "../assets/Slider/5.png";
-import img6 from "../assets/slider/6.png";
+
+// ⚠️ توجه: عکس‌ها باید توی public/assets/slider/ قرار داشته باشن
+const images = [
+  "/assets/slider/1.png",
+  "/assets/slider/2.png",
+  "/assets/slider/3.png",
+  "/assets/slider/4.png",
+  "/assets/slider/5.png",
+  "/assets/slider/6.png",
+];
 
 // داده‌های اسلاید: هر کدوم تصویر + محتوای متنی
 const slides = [
   {
-    image: `${img1}`,
+    image: images[0],
     title: "آیفون 15 پرو",
     model: "iPhone 15 Pro",
     description: "طراحی تیتانیومی، چیپ A17 Pro، دوربین پیشرفته",
   },
   {
-    image: `${img2}`,
+    image: images[1],
     title: "سامسونگ گلکسی S24",
     model: "Galaxy S24 Ultra",
     description: "صفحه‌نمایش 6.8 اینچی، دوربین 200 مگاپیکسلی، هوش مصنوعی",
   },
   {
-    image: `${img3}`,
+    image: images[2],
     title: "گوگل پیکسل 8",
     model: "Pixel 8 Pro",
     description: "تجربه خالص اندروید، بهترین پردازش تصویر، به‌روزرسانی 7 ساله",
   },
   {
-    image: `${img4}`,
+    image: images[3],
     title: "شاومی 14 اولترا",
     model: "Xiaomi 14 Ultra",
     description: "همکاری با لایکا، باتری 5000 میلی‌آمپری، شارژ سریع 90 وات",
   },
   {
-    image: `${img5}`,
+    image: images[4],
     title: "شاومی 14 اولترا",
     model: "Xiaomi 14 Ultra",
     description: "همکاری با لایکا، باتری 5000 میلی‌آمپری، شارژ سریع 90 وات",
   },
   {
-    image: `${img6}`,
+    image: images[5],
     title: "شاومی 14 اولترا",
     model: "Xiaomi 14 Ultra",
     description: "همکاری با لایکا، باتری 5000 میلی‌آمپری، شارژ سریع 90 وات",
   },
-].map((s) => ({ ...s, image: s.image.trim() }));
+];
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
