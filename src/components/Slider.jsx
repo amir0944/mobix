@@ -37,13 +37,13 @@ const slides = [
     description: "همکاری با لایکا، باتری 5000 میلی‌آمپری، شارژ سریع 90 وات",
   },
   {
-    image: images[4],
+    image: images[2],
     title: "شاومی 14 اولترا",
     model: "Xiaomi 14 Ultra",
     description: "همکاری با لایکا، باتری 5000 میلی‌آمپری، شارژ سریع 90 وات",
   },
   {
-    image: images[5],
+    image: images[1],
     title: "شاومی 14 اولترا",
     model: "Xiaomi 14 Ultra",
     description: "همکاری با لایکا، باتری 5000 میلی‌آمپری، شارژ سریع 90 وات",
