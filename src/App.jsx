@@ -7,6 +7,7 @@ import Installments from "./components/Installments";
 import Social from "./components/Social";
 import News from "./components/News";
 import Contact from "./components/Contact.";
+import MapSection from "./components/MapSection";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       <Promo />
       <Products />
       <Installments />
-      <Social />
       <News />
+      <Social />
+      <MapSection />
       <Contact />
     </div>
   );
